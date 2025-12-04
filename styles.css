@@ -1,0 +1,105 @@
+@font-face {
+  font-family: DMSansItalic; /* set name */
+  src: url(assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf); /* url of the font */
+}
+@font-face {
+    font-family: DMSans;
+    src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+img {
+    width: 200px;
+}
+
+#Fullbox {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 75%;
+    height: 700px;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 24px;
+}
+
+#Create {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-row: span 3 / span 3;
+    background-color: hsl(31, 66%, 93%);
+    font-family: DMSans;
+    font-size: xx-large;
+    /* width: 18%;
+    height: 50%;
+    margin-left: 40px;
+    border-radius: 5px;
+    padding-top: 20px; */
+}
+#Create img {
+    width: 80%;
+    height: auto;
+    
+}
+#Create p {
+    letter-spacing: -2px;
+    font-size: auto;
+    line-height: 30px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 34%;
+    text-align: left;
+}
+#quicker {
+    color: hsl(256, 67%, 59%);
+}
+#Content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: hsl(39, 100%, 71%);
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+#Manage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+#Faster {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: hsl(256, 67%, 59%);
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#Maintain {
+    background-color: hsl(39, 100%, 71%);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+#Grow {
+    background-color: hsl(256, 67%, 59%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+#Audience {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+#Schedule {
+    background-color: #dcd1fc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
