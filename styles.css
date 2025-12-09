@@ -32,7 +32,7 @@ img {
 #Create img {
     width: 80%;
     height: auto;
-    
+    object-fit: contain;
 }
 #Create p {
     letter-spacing: -2px;
@@ -162,24 +162,33 @@ img {
     grid-column-start: 3;
     grid-row-start: 5;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 28px;
 }
 #Grow p {
-    display: inline-block;
-    color:hsl(0, 0%, 100%);
+    flex: 1;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
     letter-spacing: 0px;
-    font-size: auto;
-    line-height: 60px;
-    font-weight: 500;
-    height: 100%;
-    text-align: right;
     font-family: DMSans;
+    font-size: 300%;
+    line-height: 0.9;
+    text-align: left;
+    font-weight: 500;
 }
 #Grow img {
-    display: inline-block;
-    text-align: left;
-    height: 80%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 45%;
+    max-width: 320px;
+    max-height: 120%;
     width: auto;
-    margin-top: 20px;
+    height: auto;
+    object-fit: contain;
+    margin-left: -30px;
 }
 #Audience {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -188,6 +197,27 @@ img {
     grid-row-start: 5;
     border-radius: 10px;
 }
+#fasteraud {
+    letter-spacing: -2px;
+    font-size: auto;
+    line-height: 30px;
+    font-weight: 500;
+    padding-left: 20px;
+    height: 20%;
+    text-align: left;
+    font-family: DMSans;
+    font-size: 175%;
+    margin-bottom: 0px;
+}
+#percent {
+    font-family: DMSans;
+    font-size: 400%;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    text-align: left;
+    padding-left: 20px;
+}
 #Schedule {
     background-color: #dcd1fc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -195,4 +225,37 @@ img {
     grid-column-start: 4;
     grid-row-start: 1;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 24px 0 26px 22px;
+    overflow: hidden;
+}
+#Schedule p {
+    font-family: DMSans;
+    margin: 0;
+    text-align: left;
+}
+#socialmedia {
+    font-size: 180%;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    width: 100%;
+}
+#Schedule img {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
+    transform: translateX(50%);
+}
+#optimize {
+    font-size: 110%;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 100%;
+    object-fit: contain;
 }
