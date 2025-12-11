@@ -117,7 +117,7 @@ img {
     text-align: center;
   }
   .attribution {
-    margin-top: 1830px;
+    margin-top: 1900px !important;
   }
 }
 #Create {
