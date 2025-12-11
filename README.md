@@ -27,14 +27,13 @@ Users should be able to:
 ### Screenshot
 
 ![](./assets/images/solution.png)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox or other browser to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![](./assets/images/solutionMobile.png)
 
 
 ### Links
 
 - Repository URL: [https://github.com/dudemillion/CTI110FinalProject](https://github.com/dudemillion/CTI110FinalProject)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dudemillion.github.io/CTI110FinalProject/](https://dudemillion.github.io/CTI110FinalProject/)
 
 ## My process
 
