@@ -1,63 +1,99 @@
-# CTI-110 Final Project - Bento grid
+# CTI-110 Final Project - Bento Grid by Nikhil Bhalla
 
-![Design preview for the Bento grid coding challenge](./preview.jpg)
+## Table of contents
 
-## Welcome! 👋
+- [CTI-110 Final Project - Bento Grid by Nikhil Bhalla](#cti-110-final-project---bento-grid-by-first-name-last-name)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-Thanks for checking out this front-end coding challenge.
+## Overview
 
-**To do this challenge, you need a good understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this bento grid and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 
-### Expected behaviour
+### Screenshot
 
-The two components in the left column on desktop are placed at the bottom on mobile. This is a good opportunity to practice your CSS Grid placement skills.
+![](./assets/images/solution.png)
 
-## Where to find everything
+Add a screenshot of your solution. The easiest way to do this is to use Firefox or other browser to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Links
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+- Repository URL: [https://github.com/dudemillion/CTI110FinalProject](https://github.com/dudemillion/CTI110FinalProject)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+## My process
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Built with
 
-## Building your project
+- [CSS Grid Generator](https://cssgridgenerator.io/)
+- A little bit of Flexbox
+- My Brain
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+This project definitely helped me learn a lot more about CSS. I already have a great understanding
+of HTML, and coded that with no problems, mostly without googling anything. However, CSS became
+the issue when it came to making it look like... what it needed to look like. However, tools like
+the CSS Grid Generator assisted me to a great extent. It's likely I wouldn't have gotten as far as
+I did without the CSS Grid Generator. It created a framework I could easily work off of, placing images
+and correctly sizing everything.
+When it came to making the scheduling box, I had to put 2 elements next to eachother. I searched online
+how to do it, as when I set it to inline-block, it placed the text either at the bottom or the top alignment
+of the image. When I searched it, a lot of people said to use flexboxes. So I took a small detour to figure
+out how they work, and how to implement it into that box. It ended up well! Here's the code snippet of it.
+```css
+#Schedule {
+    background-color: #dcd1fc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 24px 0 26px 22px;
+    overflow: hidden;
+}
+```
 
-## Deploying your project
+### Continued development
 
-Deploy your final project as a live site through GitHub Pages.
+This project was especially useful for future careers and projects. This helped me learn to be more independent
+from AI, where I would have used it for my CSS. I've now attained a broadened knowledge on CSS syntax, and can
+use this to my advantage again if I ever need to build a website for personal use or even for a future job, as
+my future dream job would be related to software development.
 
-## Create a custom `README.md`
-You must overwrite this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Useful resources
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- [CSS Grid Generator](https://cssgridgenerator.io/) - This was the entire backbone to my project. Without it, I don't know where
+I would have ended up.
+- [W3Schools Flexbox](https://www.w3schools.com/csS/css3_flexbox.asp) - W3Schools is a super useful tool to learn syntax. It
+provides multiple examples and explains in beginner-friendly words. This article specifically helped me learn flexboxes to use
+in that one part that I needed it for.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+## Author
 
-## Submitting your solution
+- Website - [Nikhil Bhalla](https://github.com/dudemillion)
 
-Submit your Repo link and Live Site Link on Blackboard when you are finished.
+## Acknowledgments
 
-**Have fun building!** 🚀
+Really. I can't express it enough how much the Grid generator and W3Schools helped. They were crucial to the development of
+this website, especially without the use of AI.
